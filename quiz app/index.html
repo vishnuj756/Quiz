@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/image/fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="alertBox" class="modal">
+        <div class="modal-content">
+            <p>You Lose the Chance </p>
+            <img src="./assets/image/timeout.gif" alt="" id="gif">
+            <button class="modal-button" onclick = "window.location.href='home.html';">Ok</button>
+        </div>
+    </div>
+        <div class="modal1" id="submitbox">
+            <div class="close">
+                <button style="background: none; border: none;" ><img src="./assets/image/back.png" alt="" style="width: 4em;"  onclick = "window.location.href='home.html';"
+
+                    ></button>
+                <button onclick="closebox()" style="background: none; border: none;padding-left: 66%;"><img src="./assets/image/cross.png" alt="" width="50%"></button>
+
+            </div>
+           
+            <div class="modal1-conten">
+            <p id="msg">congratulations you gave correct answers to the all questions</p>
+            <h4>Your SCORE IS:<span ><span id="score">0</span> </span></h4>
+            <img src="./assets/image/S5q.gif" alt="" style=" width: 39%; border-radius: 7%;box-shadow: 5px 2px; margin-top: 18px;" id="img12">
+        </div>
+    </div>
+    </div>
+    <div class="ansbox" id="ansbox">
+        <div class="answeraler">
+            <p id="p12">Correct Answer!</p>
+            <img src="./assets/image/check-correct.gif" alt="" id="img21" onclick="closebox()">
+        </div>
+    </div>
+    <div class="container">
+        <div class="game">
+            <div class="counter"><span id="counter">40</span>s</div>
+            <h2 class="question" id="q1"></h2>
+            <div class="answer">
+                <div id="ans1"  onclick="checkAnswer(1)">
+                    <button class="answersbtn" type="submit"> </button>
+                </div>
+                <div id="ans2" onclick="checkAnswer(2)">
+                    <button class="answersbtn" ></button>
+                </div>
+                <div id="ans3" onclick="checkAnswer(3)">
+                    <button class="answersbtn" ></button>
+                </div>
+                <div id="ans4" onclick="checkAnswer(4)">
+                    <button class="answersbtn" ></button>
+                </div>
+            </div>
+            <div class="control">
+                <div class="button1">
+                    <button onclick="Submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/javascript/index.js"></script>
+    
+</body>
+
+</html>

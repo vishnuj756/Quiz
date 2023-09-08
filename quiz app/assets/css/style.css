@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    ;
+}
+
+.container {
+    background: black;
+    width: 100%;
+    height: 563px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.question {
+    margin-bottom: 23px;
+    font-size: 14px;
+}
+
+.counter {
+    width: 40px;
+    height: 40px;
+    border: 2px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #378b87;
+    float: right;
+}
+
+.game {
+
+    width: 400px;
+    border-radius: 30px;
+    align-items: center;
+    background: #8944F5;
+    padding: 43px 16px 10px 16px;
+    overflow: hidden;
+}
+
+.answer {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.answer div {
+    padding: 22px;
+    background: orange;
+    width: 100%;
+    overflow: auto;
+    border-radius: 20px;
+    transition: 700ms;
+    box-shadow: 40px red;
+    color: white;
+}
+
+/* .answer div:active{
+    background: black;
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+} */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: -25%;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal1 {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    left: 34%;
+    top: 20%;
+    width: 25em;
+    height: 70%;
+    background: white;
+    border: 3px solid red;
+    text-align: center;
+    border-radius: 33px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 84px;
+    border: 1px solid #888;
+    width: 45%;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.close {
+    display: flex;
+    padding-left: 23px;
+    padding-top: 23px;
+}
+
+
+.modal1-conten {
+    color: green;
+    padding-top: 0px;
+}
+
+.modal1-conten p {
+    padding-bottom: 23px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* Style for the button */
+.modal-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 18px;
+    width: 30%;
+    border-radius: 12px;
+}
+
+#gif {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 22px;
+}
+
+.button1 button {
+
+    font-size: 14px;
+    border-radius: 5px;
+    height: 28px;
+    background-color: orange;
+    padding: 5.5px;
+    margin: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: px;
+}
+
+.answersbtn {
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ansbox {
+    display: none;
+    width: 23%;
+    position: absolute;
+    top: 42%;
+    left: 39% !important;
+    text-align: center;
+    color: green;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.ansbox img {
+    width: 26%;
+    cursor: pointer;
+}
+
+.ansbox p {
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-top: 4px;
+}
+
+/* home page css */
+.head {
+    font-size: 18px;
+    padding-top: 15%;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.ctrln {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 14%;
+}
+
+.letsbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    margin-left: 37%;
+}
+
+.letsbtn button {
+   width:78px ;
+    height: 78px;
+    border: 5px solid;
+    background-color: #2db8f3;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: 500ms;
+    color: aliceblue;
+   
+    font-family: 'Pacifico', cursive;
+}
+
+.letsbtn button:active {
+    transform: scale(0.7);
+}
+
+/* @media only screen and (min-width:800px to max-width: 1000px) {
+    /* Add your responsive styles here */
+
+@media only screen and (max-width: 800px) {
+
+    /* Add your responsive styles here */
+    .container {
+        padding: 12px;
+    }
+
+    .game {
+        padding-top: 5%;
+        width: 330px;
+        height: 457px;
+        /* Example: Increase top padding for smaller screens */
+    }
+
+    .modal1 {
+        width: 54%;
+        font-size: 18px;
+        height: 400px;
+        left: 22%;
+        top: 10%;
+    }
+
+    .modal {
+        width: 100%;
+        top: 3%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .ansbox {
+        left: 31%;
+    }
+}
